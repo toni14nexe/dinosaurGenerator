@@ -1,0 +1,106 @@
+@font-face {
+    font-family: JurassicFont;
+    src: url(./fonts/JurassicPark-BL48.ttf);
+  }
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.generatorDiv {
+    margin-top: 2%;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    width: 50%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: JurassicFont;
+    letter-spacing: 4px;
+    color: red;
+    font-size: 5rem;
+    margin-bottom: -0.8%;
+}
+
+button {
+    transition: 0.6s ease-in-out;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    font-size: 3rem;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 3%;
+    font-family: JurassicFont;
+    letter-spacing: 2px;
+    width: 50%
+
+}
+
+button:hover {
+    background-color: gray;
+    width: 60%;
+    transition: 0.6s ease-in-out;
+}
+
+.divImage img {
+    align-self: center;
+    height: 270px;
+    width: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid gray;
+}
+
+#dinoName {
+    font-family: JurassicFont;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: large;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: -17px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .generatorDiv {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    button {
+        width: 80%;
+        font-size: 2.2rem;
+    }
+
+    button:hover {
+        width: 80%;
+        background-color: black;
+    }
+}
